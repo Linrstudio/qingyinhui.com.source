@@ -20,6 +20,10 @@ jobs:
           hugo-version: '0.74.2'
           # extended: true
 
+      # insta npm
+      - name: install
+        run: npm install
+
       - name: Build
         run: npm run build
 
