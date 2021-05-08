@@ -30,4 +30,5 @@ jobs:
           personal_token: ${{ secrets.ACTION_ACCESS_TOKEN }}
           publish_dir: ./public                                     # Hugo 构建发布目录
           EXTERNAL_REPOSITORY: linrstudio/qingyinhui.com    # Github Pages 仓库
-          PUBLISH_BRANCH: main                                    # 发布分支
+          PUBLISH_BRANCH: main  # 发布分支
+          keep_files: true
