@@ -1,0 +1,12 @@
+[en]
+title = "Qingyinhui"
+weight = 1
+LanguageName = "EN"
+contentDir = "content/english"
+
+[zh]
+title = "清音会"
+description = "清音会"
+contentDir = "content/zh" 
+weight = 1
+LanguageName = "ZH"
