@@ -17,20 +17,17 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.74.2'
+          hugo-version: 'latest'
           # extended: true
 
-      # insta npm
-      - name: install
-        run: npm install
-
       - name: Build
-        run: npm run build
+        run: hexo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}             # Blog 仓库配置的私钥
+          #deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}             # Blog 仓库配置的私钥
+          personal_token: ${{ secrets.ACTION_ACCESS_TOKEN }}
           publish_dir: ./public                                     # Hugo 构建发布目录
           EXTERNAL_REPOSITORY: linrstudio/qingyinhui.com    # Github Pages 仓库
           PUBLISH_BRANCH: main                                    # 发布分支
