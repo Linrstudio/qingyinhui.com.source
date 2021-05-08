@@ -103,7 +103,7 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: git@github.com:linrstudio/qingyinhui.com.git
+  repository: git@github.com:Linrstudio/qingyinhui.com.git
   branch: gh-pages
 
 markdown:
